@@ -1,0 +1,26 @@
+
+{% extends 'parent.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block title %}
+        <title>Child HTML</title>
+    {% endblock %}
+
+</head>
+<body>
+    <center>
+        <h1>Hahahaa</h1>
+
+        {% block body_block %}
+            <h1 class="btn btn-danger">This is h1 tag with button properties</h1>
+        {% endblock %}
+
+        <h1>This is outside of html page will not worked in inheritance </h1>
+    </center>
+</body>
+</html>
